@@ -7,7 +7,6 @@ from datetime import datetime
 import psutil
 import config
 
-
 class Snapshot:
     '''Snapshot class'''
     def __init__(self):
@@ -28,6 +27,7 @@ class Snapshot:
         self.net = str((psutil.net_io_counters().bytes_sent))
         self.counter += 1
         self.time = str(datetime.now())
+
 
     def wr_txt(self):
         '''write to txt file'''
