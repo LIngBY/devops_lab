@@ -21,3 +21,6 @@ class TestPrime(TestCase):
     def test_get_path(self):
         """test path"""
         self.assertIsNot(task6.get_pythpath(), "/home/root/")
+
+    def tearDown(self):
+        """Finish"""
